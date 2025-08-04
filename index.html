@@ -2,33 +2,34 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokenpô</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jokenpô</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <h1>Jokenpô</h1>
+  <div class="container">
+    <h1>Jokenpô</h1>
 
-        <p class="rodada">Rodada: <span id="round">1</span> / 3</p>
-        <p class="escolha-maquina">Alexa escolheu: <span id="maquina-jogada">-</span></p>
-        <p class="result">Resultado aqui</p>
+    <p class="rodada">Rodada: <span id="round">0</span> / 3</p>
+    <p class="escolha-maquina">Máquina escolheu: <span id="maquina-jogada">-</span></p>
+    <p class="escolha-humano">Você escolheu: <span id="humano-jogada">-</span></p>
+    <p class="result">Resultado aqui</p>
 
-        <div class="buttons">
-            <button id="pedra" onclick="playhuman('pedra')" aria-label="Escolher Pedra">👊</button>
-            <button id="papel" onclick="playhuman('papel')" aria-label="Escolher Papel">🖐️</button>
-            <button id="tesoura" onclick="playhuman('tesoura')" aria-label="Escolher Tesoura">✌️</button>
-        </div>
-
-        <p class="pontua">Sua Pontuação: <span id="your-score">0</span></p>
-        <p class="machine">Pontuação do Alexa: <span id="machine-score">0</span></p>
-
-        <button id="reiniciar" style="display: none;" onclick="restartGame()">🔄 Jogar Novamente</button>
+    <div class="buttons">
+      <button id="pedra" onclick="playhuman('pedra')" aria-label="Escolher Pedra">👊</button>
+      <button id="papel" onclick="playhuman('papel')" aria-label="Escolher Papel">🖐️</button>
+      <button id="tesoura" onclick="playhuman('tesoura')" aria-label="Escolher Tesoura">✌️</button>
     </div>
 
-    <script src="script.js"></script>
+    <p class="pontua">Sua Pontuação: <span id="your-score">0</span></p>
+    <p class="machine">Pontuação da Máquina: <span id="machine-score">0</span></p>
+
+    <button id="reiniciar" style="display: none;" onclick="restartGame()">🔄 Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
