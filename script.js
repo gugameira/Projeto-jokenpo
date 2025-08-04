@@ -69,7 +69,7 @@ const endGame = () => {
   if (humanScoreNumber > machineScoreNumber) {
     mensagemFinal = `🏁 Fim de jogo! Você venceu por ${humanScoreNumber} x ${machineScoreNumber} 🎉`
   } else if (humanScoreNumber < machineScoreNumber) {
-    mensagemFinal = `🏁 Fim de jogo! Alexa venceu por ${machineScoreNumber} x ${humanScoreNumber} 🤖`
+    mensagemFinal = `🏁 Fim de jogo! Máquina venceu por ${machineScoreNumber} x ${humanScoreNumber} 🤖`
   } else {
     mensagemFinal = '🏁 Empate total! 😮'
   }
